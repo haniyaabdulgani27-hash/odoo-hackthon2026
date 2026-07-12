@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TransitOps Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+display:flex;
+background:#f5f7fa;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:250px;
+height:100vh;
+background:#1E3A8A;
+color:white;
+position:fixed;
+}
+
+.sidebar h2{
+text-align:center;
+padding:20px;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar ul li{
+padding:16px 25px;
+}
+
+.sidebar ul li:hover{
+background:#2563EB;
+cursor:pointer;
+}
+
+.sidebar ul li a{
+color:white;
+text-decoration:none;
+display:block;
+}
+
+/* Fleet Dropdown */
+
+.dropdown{
+display:none;
+background:#2949b5;
+}
+
+.dropdown li{
+padding-left:40px;
+}
+
+.show{
+display:block;
+}
+
+/* Main */
+
+.main{
+margin-left:250px;
+width:100%;
+}
+
+.header{
+background:white;
+padding:20px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.header h1{
+color:#1E3A8A;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.card h2{
+font-size:35px;
+color:#2563EB;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:18px;
+color:#555;
+}
+
+@media(max-width:900px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+width:220px;
+}
+
+.main{
+margin-left:220px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🚍 TransitOps</h2>
+
+<ul>
+
+<li><a href="fpg.html">🏠 Dashboard</a></li>
+
+<li onclick="menu()">🚍 Fleet ▼</li>
+
+<ul id="fleetMenu" class="dropdown">
+
+<li><a href="vehicle.html">🚗 Vehicles</a></li>
+
+<li><a href="driver.html">👨 Drivers</a></li>
+
+<li><a href="trip.html">🛣 Trips</a></li>
+
+<li><a href="maintenance.html">🔧 Maintenance</a></li>
+
+<li><a href="fuelLog.html">⛽ Fuel Logs</a></li>
+
+</ul>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+
+<h1>Fleet Management Dashboard</h1>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h2>24</h2>
+<p>Total Vehicles</p>
+</div>
+
+<div class="card">
+<h2>18</h2>
+<p>Total Drivers</p>
+</div>
+
+<div class="card">
+<h2>42</h2>
+<p>Total Trips</p>
+</div>
+
+<div class="card">
+<h2>6</h2>
+<p>Maintenance Due</p>
+</div>
+
+<div class="card">
+<h2>₹48,500</h2>
+<p>Fuel Expense</p>
+</div>
+
+<div class="card">
+<h2>96%</h2>
+<p>Fleet Availability</p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function menu(){
+
+document.getElementById("fleetMenu").classList.toggle("show");
+
+}
+
+</script>
+
+</body>
+</html>
