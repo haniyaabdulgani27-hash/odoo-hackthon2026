@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TransitOps Fleet Management</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fc;
+}
+
+header{
+background:#1E3A8A;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:18px;
+}
+
+.hero{
+height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:50px;
+color:#1E3A8A;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+color:#555;
+margin-bottom:30px;
+max-width:700px;
+}
+
+.btn{
+background:#2563EB;
+color:white;
+padding:15px 35px;
+border-radius:8px;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#1E40AF;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:40px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:250px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.card h2{
+margin:15px 0;
+color:#1E3A8A;
+}
+
+.card a{
+text-decoration:none;
+color:#2563EB;
+font-weight:bold;
+}
+
+footer{
+background:#1E3A8A;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🚍 TransitOps</div>
+
+<nav>
+<a href="fpg.html">Home</a>
+<a href="1vehicle.html">Vehicles</a>
+<a href="driver.html">Drivers</a>
+<a href="trip.html">Trips</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Fleet Management System</h1>
+
+<p>
+Manage vehicles, drivers and trips from one place.
+Track fleet operations easily with a modern dashboard.
+</p>
+
+<a href="vehicle.html" class="btn">
+Get Started
+</a>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h2>🚗 Vehicles</h2>
+<p>Add, update and manage all vehicles.</p>
+<br>
+<a href="vehicle.html">Open →</a>
+</div>
+
+<div class="card">
+<h2>👨 Drivers</h2>
+<p>Manage driver information and licenses.</p>
+<br>
+<a href="driver.html">Open →</a>
+</div>
+
+<div class="card">
+<h2>🛣 Trips</h2>
+<p>Create and monitor all trips.</p>
+<br>
+<a href="trip.html">Open →</a>
+</div>
+
+</section>
+
+<footer>
+
+© 2026 TransitOps Fleet Management
+
+</footer>
+
+</body>
+</html>

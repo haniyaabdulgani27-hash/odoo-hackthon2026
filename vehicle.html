@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TransitOps - Vehicle Management</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    margin-bottom:30px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+input,
+select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.buttons{
+    margin-top:25px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    color:white;
+    font-size:15px;
+}
+
+.save{
+    background:#2563eb;
+}
+
+.cancel{
+    background:#ef4444;
+    margin-left:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f9fafb;
+}
+
+.edit{
+    background:#10b981;
+}
+
+.delete{
+    background:#ef4444;
+}
+
+@media(max-width:768px){
+.form-grid{
+grid-template-columns:1fr;
+}
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🚗 Vehicle Management</h1>
+
+<div class="card">
+
+<h2>Add Vehicle</h2>
+<br>
+
+<form>
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Vehicle Name</label>
+<input type="text" placeholder="Enter Vehicle Name">
+</div>
+
+<div class="form-group">
+<label>Vehicle Number</label>
+<input type="text" placeholder="MH12AB1234">
+</div>
+
+<div class="form-group">
+<label>Vehicle Type</label>
+<select>
+<option>Car</option>
+<option>Bus</option>
+<option>Truck</option>
+<option>Bike</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Capacity</label>
+<input type="number" placeholder="40">
+</div>
+
+<div class="form-group">
+<label>Status</label>
+<select>
+<option>Available</option>
+<option>In Use</option>
+<option>Maintenance</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Assigned Driver</label>
+<input type="text" placeholder="Driver Name">
+</div>
+
+<div class="form-group">
+<label>Purchase Date</label>
+<input type="date">
+</div>
+
+<div class="form-group">
+<label>Insurance Expiry</label>
+<input type="date">
+</div>
+
+</div>
+
+<div class="buttons">
+<button class="save">Save Vehicle</button>
+<button class="cancel" type="reset">Cancel</button>
+</div>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h2>Vehicle List</h2>
+
+<br>
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Vehicle</th>
+<th>Number</th>
+<th>Type</th>
+<th>Driver</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>City Bus</td>
+<td>MH12AB1234</td>
+<td>Bus</td>
+<td>Rahul</td>
+<td>Available</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Truck A</td>
+<td>MH14CD5678</td>
+<td>Truck</td>
+<td>Amit</td>
+<td>In Use</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Company Car</td>
+<td>MH01XY8899</td>
+<td>Car</td>
+<td>Sneha</td>
+<td>Maintenance</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

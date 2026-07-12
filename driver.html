@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Driver Management</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f6f9;
+padding:30px;
+}
+.container{
+max-width:1100px;
+margin:auto;
+}
+.card{
+background:#fff;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 12px rgba(0,0,0,.1);
+margin-bottom:25px;
+}
+h1{
+color:#2563eb;
+margin-bottom:20px;
+}
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+input,select{
+padding:10px;
+width:100%;
+border:1px solid #ccc;
+border-radius:6px;
+}
+label{
+font-weight:bold;
+}
+button{
+padding:10px 20px;
+margin-top:20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+color:white;
+}
+.save{background:#2563eb;}
+.reset{background:#ef4444;}
+table{
+width:100%;
+border-collapse:collapse;
+}
+th,td{
+padding:10px;
+border:1px solid #ddd;
+text-align:center;
+}
+th{
+background:#2563eb;
+color:white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>👨 Driver Management</h1>
+
+<div class="card">
+
+<div class="grid">
+
+<div>
+<label>Driver Name</label>
+<input type="text">
+</div>
+
+<div>
+<label>Phone</label>
+<input type="text">
+</div>
+
+<div>
+<label>Email</label>
+<input type="email">
+</div>
+
+<div>
+<label>License Number</label>
+<input type="text">
+</div>
+
+<div>
+<label>License Expiry</label>
+<input type="date">
+</div>
+
+<div>
+<label>Status</label>
+<select>
+<option>Active</option>
+<option>Inactive</option>
+</select>
+</div>
+
+</div>
+
+<button class="save">Save Driver</button>
+<button class="reset">Cancel</button>
+
+</div>
+
+<div class="card">
+
+<h2>Driver List</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Phone</th>
+<th>License</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Rahul</td>
+<td>9876543210</td>
+<td>MH12345</td>
+<td>Active</td>
+<td>Edit | Delete</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Amit</td>
+<td>9876543299</td>
+<td>MH88991</td>
+<td>Active</td>
+<td>Edit | Delete</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

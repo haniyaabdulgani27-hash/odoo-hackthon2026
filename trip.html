@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trip Management</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f4f6f9;
+padding:30px;
+}
+.container{
+max-width:1100px;
+margin:auto;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+margin-bottom:25px;
+}
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+input,select{
+padding:10px;
+width:100%;
+border:1px solid #ccc;
+border-radius:6px;
+}
+label{
+font-weight:bold;
+}
+button{
+margin-top:20px;
+padding:10px 20px;
+background:#2563eb;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+table{
+width:100%;
+border-collapse:collapse;
+}
+th,td{
+padding:10px;
+border:1px solid #ddd;
+text-align:center;
+}
+th{
+background:#2563eb;
+color:white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🛣 Trip Management</h1>
+
+<div class="card">
+
+<div class="grid">
+
+<div>
+<label>Trip Name</label>
+<input type="text">
+</div>
+
+<div>
+<label>Vehicle</label>
+<input type="text">
+</div>
+
+<div>
+<label>Driver</label>
+<input type="text">
+</div>
+
+<div>
+<label>Source</label>
+<input type="text">
+</div>
+
+<div>
+<label>Destination</label>
+<input type="text">
+</div>
+
+<div>
+<label>Date</label>
+<input type="date">
+</div>
+
+<div>
+<label>Status</label>
+<select>
+<option>Scheduled</option>
+<option>Running</option>
+<option>Completed</option>
+</select>
+</div>
+
+</div>
+
+<button>Save Trip</button>
+
+</div>
+
+<div class="card">
+
+<h2>Trip List</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Trip</th>
+<th>Vehicle</th>
+<th>Driver</th>
+<th>Source</th>
+<th>Destination</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Pune-Mumbai</td>
+<td>Bus A</td>
+<td>Rahul</td>
+<td>Pune</td>
+<td>Mumbai</td>
+<td>Running</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Nashik-Pune</td>
+<td>Truck B</td>
+<td>Amit</td>
+<td>Nashik</td>
+<td>Pune</td>
+<td>Completed</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
