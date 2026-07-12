@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicle Management System</title>
+</head>
+
+<body>
+
+    <h1>Vehicle Management System</h1>
+
+    <h2>Add Vehicle</h2>
+
+    <form action="/add_vehicle" method="POST">
+
+        <input type="text" name="name" placeholder="Vehicle Name" required>
+        <br><br>
+
+        <input type="text" name="number" placeholder="Vehicle Number" required>
+        <br><br>
+
+        <input type="text" name="model" placeholder="Vehicle Model">
+        <br><br>
+
+        <input type="text" name="status" placeholder="Status">
+        <br><br>
+
+        <button type="submit">Add Vehicle</button>
+
+    </form>
+
+
+    <h2>Vehicle List</h2>
+
+    {% for vehicle in vehicles %}
+
+    <p>
+        ID: {{ vehicle[0] }} |
+        Name: {{ vehicle[1] }} |
+        Number: {{ vehicle[2] }} |
+        Model: {{ vehicle[3] }} |
+        Status: {{ vehicle[4] }}
+    </p>
+
+    {% endfor %}
+
+
+</body>
+
+</html>
