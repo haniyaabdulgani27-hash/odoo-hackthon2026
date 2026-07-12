@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel Log</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f6f9;
+padding:30px;
+}
+.container{
+max-width:1100px;
+margin:auto;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 12px rgba(0,0,0,.1);
+margin-bottom:25px;
+}
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+label{
+font-weight:bold;
+}
+input,select{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+button{
+padding:10px 20px;
+margin-top:20px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+table{
+width:100%;
+border-collapse:collapse;
+}
+th,td{
+padding:10px;
+border:1px solid #ddd;
+text-align:center;
+}
+th{
+background:#2563eb;
+color:white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>⛽ Fuel Log Management</h1>
+
+<div class="card">
+
+<div class="grid">
+
+<div>
+<label>Vehicle</label>
+<input type="text">
+</div>
+
+<div>
+<label>Date</label>
+<input type="date">
+</div>
+
+<div>
+<label>Fuel Type</label>
+<select>
+<option>Petrol</option>
+<option>Diesel</option>
+<option>CNG</option>
+<option>Electric</option>
+</select>
+</div>
+
+<div>
+<label>Fuel Quantity (Litres)</label>
+<input type="number">
+</div>
+
+<div>
+<label>Price Per Litre</label>
+<input type="number">
+</div>
+
+<div>
+<label>Total Cost</label>
+<input type="number">
+</div>
+
+</div>
+
+<button>Save Fuel Log</button>
+
+</div>
+
+<div class="card">
+
+<h2>Fuel Log List</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Vehicle</th>
+<th>Date</th>
+<th>Fuel</th>
+<th>Quantity</th>
+<th>Total Cost</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Bus A</td>
+<td>12-07-2026</td>
+<td>Diesel</td>
+<td>50 L</td>
+<td>₹5000</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
