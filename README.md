@@ -1,0 +1,1 @@
+# odoo-hackthon2026
